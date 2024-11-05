@@ -3,19 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>O Cãozinho Aventureiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>O Cão Aventureiro</title>
 </head>
 <body>
-    <div class="container">
-        <h1>O Cãozinho Aventureiro</h1>
-        <p id="story-text">Era uma vez um cãozinho chamado Max que sonhava em viver grandes aventuras. Um dia, ele encontrou um mapa misterioso. O que Max deve fazer?</p>
-        <div id="choices">
-            <button onclick="makeChoice('explorar')">Explorar o mapa</button>
-            <button onclick="makeChoice('voltar')">Voltar para casa</button>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Max com o mapa">
+            <p>Max, o cãozinho aventureiro, encontrou um mapa misterioso no parque. Esse mapa promete levá-lo a um lugar cheio de novas descobertas e cheiros. Max está ansioso para começar sua jornada! Onde ele deve ir primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">Floresta encantada</button>
+            <button class="btn-proximo" data-proximo="2">Campo de flores</button>
         </div>
-        <div id="image-container"></div> <!-- Container para a imagem -->
-    </div>
+        <div class="passo" id="passo-1">
+            <p>Max entra na floresta encantada. Ele vê árvores enormes e ouve sons misteriosos. O que ele deve fazer?</p>
+            <button class="btn-proximo" data-proximo="3">Seguir o som misterioso</button>
+            <button class="btn-proximo" data-proximo="4">Explorar o riacho próximo</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No campo de flores, Max fica encantado com o perfume das flores e as borboletas voando ao seu redor. Ele vê uma colina ao longe e um lago brilhante.</p>
+            <button class="btn-proximo" data-proximo="5">Ir para a colina</button>
+            <button class="btn-proximo" data-proximo="6">Caminhar até o lago</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Seguindo o som, Max encontra uma coruja sábia, que lhe dá uma pista sobre um tesouro escondido perto de uma grande árvore na floresta.</p>
+            <button class="btn-proximo" data-proximo="7">Procurar a árvore grande</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="Max voltando para casa">
+            <p>Max decide que a aventura é um pouco assustadora e volta para casa, mas promete tentar de novo outro dia.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Na colina, Max vê uma vista incrível e descobre um caminho escondido que leva de volta para a floresta encantada.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir o caminho escondido</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>No lago, Max vê seu reflexo e pensa sobre suas aventuras. Ele decide seguir em frente e explorar mais.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para o campo de flores</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Max encontra a árvore grande e cava ao redor dela, descobrindo um osso especial! Ele decide enterrá-lo de novo e visitá-lo sempre. Fim da aventura!</p>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>De volta ao campo de flores, Max sente-se inspirado e contente, pensando nas novas aventuras que ainda o aguardam!</p>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
