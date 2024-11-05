@@ -10,8 +10,10 @@
     <div class="container">
         <h1>O Cãozinho Aventureiro</h1>
         <p id="story-text">Era uma vez um cãozinho chamado Max que sonhava em viver grandes aventuras. Um dia, ele encontrou um mapa misterioso. O que Max deve fazer?</p>
-        <button onclick="makeChoice('explorar')">Explorar o mapa</button>
-        <button onclick="makeChoice('voltar')">Voltar para casa</button>
+        <div id="choices">
+            <button onclick="makeChoice('explorar')">Explorar o mapa</button>
+            <button onclick="makeChoice('voltar')">Voltar para casa</button>
+        </div>
         <div id="image-container"></div> <!-- Container para a imagem -->
     </div>
     <script src="script.js"></script>
